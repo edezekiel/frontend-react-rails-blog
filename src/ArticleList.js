@@ -5,10 +5,9 @@ export default class ArticleList extends Component {
 
   render() {
     return (
-      <ul>
+      <div>
         {this.props.articles.map((article, i) =><ArticleListItem key={i} article={article} />)}
-      </ul>
-
+      </div>
     )
   }
 }

@@ -17,9 +17,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Textarea />
+        <br />
         <ArticleList
           articles={this.state.articles}/>
-        <Textarea />
       </div>
     );
   }

@@ -4,8 +4,13 @@ export default class ArticleListItem extends Component {
 
   render() {
     return (
-      <li>Title: {this.props.article.title},
-    Content: {this.props.article.text}</li>
+      <div>
+        <strong>Article {this.props.article.id}:</strong>
+        {this.props.article.title},
+        {this.props.article.text}
+        
+
+      </div>
     )
   }
 }

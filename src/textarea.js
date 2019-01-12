@@ -27,7 +27,7 @@ export default class Textarea extends Component {
       },
       body: JSON.stringify(article)
     }
-    return fetch("http://localhost:3000/api/v1", options)
+    return fetch("http://localhost:3000/api/v1/articles", options)
     .then(res => res.json())
   }
 
@@ -38,7 +38,7 @@ export default class Textarea extends Component {
         <label>Title:
           <input
             type="text"
-            name="name"
+            name="title"
             value={this.state.title}
             onChange={this.handleChange}/>
         </label>
