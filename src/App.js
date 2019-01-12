@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Textarea from './textarea.js'
 
 class App extends Component {
   getArticles () {
@@ -9,8 +10,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        hi there
         {this.getArticles()}
+        <Textarea />
       </div>
     );
   }
