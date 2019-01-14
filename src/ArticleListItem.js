@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import Parser from 'html-react-parser';
+import { List } from 'semantic-ui-react'
 
 export default class ArticleListItem extends Component {
 
   render() {
     return (
-      <div>
+      <List.Item>
         <strong>Article {this.props.article.id}:</strong>
         --{this.props.article.title}--
         {Parser(`${this.props.article.text}`)}
-      </div>
+      </List.Item>
     )
   }
 }

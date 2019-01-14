@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Button, Checkbox, Form } from 'semantic-ui-react'
 
 export default class Textarea extends Component {
   constructor(props) {
@@ -33,25 +34,29 @@ export default class Textarea extends Component {
 
   render() {
     return (
-      <form
-        onSubmit={this.handleSubmit}>
-        <label>Title:
-          <input
-            type="text"
-            name="title"
-            value={this.state.title}
-            onChange={this.handleChange}/>
-        </label>
-        <label>Content:
-          <textarea
-            name="content"
-            value={this.state.content}
-            onChange={this.handleChange}>
-          </textarea>
-        </label>
-
-        <input type="submit" value="Submit" />
-      </form>
+      <Form onSubmit={this.handleSubmit}>
+        <Form.Field>
+          <label>Title:
+            <input
+              type="text"
+              name="title"
+              value={this.state.title}
+              onChange={this.handleChange}/>
+          </label>
+        </Form.Field>
+        <Form.Field>
+          <label>Content:
+            <textarea
+              name="content"
+              value={this.state.content}
+              onChange={this.handleChange}>
+            </textarea>
+          </label>
+        </Form.Field>
+        <Form.Field>
+          <Button primary type="submit">Submit</Button>
+        </Form.Field>
+      </Form>
     )
   }
 }
