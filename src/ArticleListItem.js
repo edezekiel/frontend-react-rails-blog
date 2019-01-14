@@ -7,7 +7,7 @@ export default class ArticleListItem extends Component {
     return (
       <div>
         <strong>Article {this.props.article.id}:</strong>
-        {this.props.article.title},
+        --{this.props.article.title}--
         {Parser(`${this.props.article.text}`)}
       </div>
     )
