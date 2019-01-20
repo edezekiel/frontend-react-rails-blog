@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ArticleList from './ArticleList.js'
 import ArticleForm from './ArticleForm.js'
 import NavBar from '../presentational/NavBar.js'
+import { BrowserRouter as Router, Route, NavLink, Link, Switch } from 'react-router-dom';
 
 export default class ArticleContainer extends Component {
   state = {
@@ -19,10 +20,14 @@ export default class ArticleContainer extends Component {
     return (
       <div>
         <NavBar />
-        <ArticleForm />
-        <br />
-        <ArticleList
-          articles={this.state.articles}/>
+        <Switch>
+          <Route exact path='/new' render={() => {
+            return <ArticleForm />
+          }} />
+          <Route exact path='/' render={() => {
+            return <ArticleList articles={this.state.articles}/>
+          }} />
+        </Switch>
       </div>
     );
   }

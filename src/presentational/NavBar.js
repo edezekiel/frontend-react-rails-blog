@@ -7,7 +7,7 @@ export default class MenuExampleStackable extends Component {
   render() {
     return (
       <Menu className="stackable top fixed inverted">
-        <NavLink to="/" className="active item">Home </NavLink>
+        <NavLink to="/" className="active item">Blog</NavLink>
 
         <NavLink to="/about" className="item">About</NavLink>
 
