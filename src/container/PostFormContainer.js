@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
-import { Button, Form } from 'semantic-ui-react'
 import PostForm from '../presentational/PostForm.js'
 
 export default class FormContainer extends Component {
-
   state = {
     title: 'New blog title',
     content: 'New blog content'

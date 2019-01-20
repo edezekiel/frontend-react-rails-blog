@@ -8,8 +8,7 @@ const AppHeader = (props) =>  {
     <div>
       <Segment>
         <Menu className="inverted fixed">
-          <Link to="/" className="item"> <img src={logo} alt="logo"/>
-          </Link>
+          <Link to="/" className="item"> <img src={logo} alt="logo"/></Link>
 
           <div className="right menu">
             <Link to="/about" className="item">About Me</Link>
