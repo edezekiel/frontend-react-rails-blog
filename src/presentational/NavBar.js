@@ -9,9 +9,7 @@ export default class MenuExampleStackable extends Component {
   render() {
     return (
 
-      <Menu className="main inverted fixed">
-
-
+      <Menu inverted header large fixed>
         <Link
           to="/"
           className="item">
@@ -20,7 +18,7 @@ export default class MenuExampleStackable extends Component {
 
         <div className="right menu">
 
-          <Link to="/about" className="item">About</Link>
+          <Link to="/about" className="item">About Me</Link>
 
           <Link to="/contact" className="item">Contact</Link>
 
