@@ -1,19 +1,21 @@
 import React, {Component} from 'react'
 import { Menu } from 'semantic-ui-react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import './menu.css'
 
 export default class MenuExampleStackable extends Component {
 
   render() {
     return (
-      <Menu className="stackable top fixed inverted">
-        <NavLink to="/" className="active item">Blog</NavLink>
+      <Menu className="main inverted">
 
-        <NavLink to="/about" className="item">About</NavLink>
+        <Link to="/" className="item">Blog</Link>
 
-        <NavLink to="/contact" className="item">Contact</NavLink>
+        <Link to="/about" className="item">About</Link>
 
-        <NavLink to="/new" className="item">New Article</NavLink>
+        <Link to="/contact" className="item">Contact</Link>
+
+        <Link to="/new" className="item">New Article</Link>
       </Menu>
     )
   }
