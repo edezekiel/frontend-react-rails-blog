@@ -1,13 +1,17 @@
 import React, {Component} from 'react'
-import ArticleListItem from "../presentational/ArticleListItem.js"
 import { List } from 'semantic-ui-react'
+import Article from '../presentational/Article.js'
 
 export default class ArticleList extends Component {
 
   render() {
     return (
       <List>
-        {this.props.articles.map((article, i) =><ArticleListItem key={i} article={article} />)}
+        {this.props.articles.map((article, i) =>
+          <Article
+            key={i}
+            article={article} />
+        )}
       </List>
     )
   }
