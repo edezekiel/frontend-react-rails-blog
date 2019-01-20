@@ -7,9 +7,10 @@ import ArticleList from './ArticleList.js'
 import Article from '../presentational/Article.js'
 import About from '../presentational/About.js'
 import Contact from '../presentational/Contact.js'
+
 const URL = "http://localhost:3000/api/v1/articles"
 
-export default class PageContainer extends Component {
+export default class ArticlesContainer extends Component {
   state = {
     articles: [],
     article: {},
@@ -34,15 +35,6 @@ export default class PageContainer extends Component {
       <div>
         <Container>
           <Switch>
-            <Route exact path='/new' render={() => {
-              return <ArticleForm />
-            }} />
-            <Route exact path="/about" render={() => {
-              return <About />
-            }} />
-            <Route exact path="/contact" render={() => {
-              return <Contact />
-            }} />
             <Route exact path="/:id" render={({match}) => {
               let articleId = parseInt(match.params.id)
               this.fetchArticle(articleId)
