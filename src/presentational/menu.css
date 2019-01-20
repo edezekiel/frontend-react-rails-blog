@@ -2,6 +2,11 @@
   border-radius: 0px !important;
 }
 
-.ui.segment {
+.ui.masthead {
   padding-top: 0px !important;
+  min-height: 400px;
+}
+
+#heroheader {
+  padding-top: 100px;
 }

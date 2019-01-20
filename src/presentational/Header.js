@@ -10,7 +10,7 @@ export default class Header extends Component {
 
   render() {
     return(
-      <Segment className="inverted vertical masthead center aligned">
+      <Segment className="inverted vertical masthead">
         <NavBar />
         <HeroBanner />
       </Segment>
