@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ArticleContainer from './container/ArticleContainer.js'
+import PageContainer from './container/PageContainer.js'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 import Banner from './presentational/Banner.js'
@@ -19,7 +19,7 @@ class App extends Component {
           <Segment padded="very">
             <Banner />
           </Segment>
-          <Route path='/' component={ArticleContainer} />
+          <Route path='/' component={PageContainer} />
         </div>
       </Router>
     );

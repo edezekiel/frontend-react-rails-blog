@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Parser from 'html-react-parser';
-import { Button, List } from 'semantic-ui-react'
+import { List } from 'semantic-ui-react'
 
 const Article = (props) => {
   return (

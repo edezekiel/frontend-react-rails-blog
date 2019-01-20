@@ -5,7 +5,7 @@ export default class Banner extends Component {
 
   render() {
     return(
-      <Header id="heroheader" size="huge" textAlign="centered">
+      <Header id="heroheader" size="huge">
         Ed Ezekiel's Blog
       </Header>
     )

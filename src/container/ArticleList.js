@@ -7,9 +7,9 @@ export default class ArticleList extends Component {
   render() {
     return (
       <List>
-        {this.props.articles.map((article, i) =>
+        {this.props.articles.map((article) =>
           <Article
-            key={i}
+            key={article.id}
             article={article} />
         )}
       </List>
