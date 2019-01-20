@@ -17,8 +17,8 @@ const AppHeader = (props) =>  {
           </div>
         </Menu>
       </Segment>
-      <Segment padded="very">
-        <Header id="heroheader" size="huge">
+      <Segment basic padded="very" textAlign="center">
+        <Header size="huge">
           Ed Ezekiel's Blog
         </Header>
       </Segment>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react'
 import Article from '../presentational/Article.js'
 
 const URL = "http://localhost:3000/api/v1/articles"
@@ -18,12 +17,10 @@ export default class ArticleContainer extends Component {
 
   render() {
     return (
-      <Container>
-        <Article
-          key={this.state.article.id}
-          article={this.state.article}
-        />
-      </Container>
+      <Article
+        key={this.state.article.id}
+        article={this.state.article}
+      />
     )
   }
 }
