@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { List } from 'semantic-ui-react'
-import Article from '../presentational/Article.js'
+import { Link } from 'react-router-dom'
 
 export default class ArticleList extends Component {
 
@@ -8,9 +8,9 @@ export default class ArticleList extends Component {
     return (
       <List>
         {this.props.articles.map((article) =>
-          <Article
-            key={article.id}
-            article={article} />
+          <Link key={article.id} to={`/${article.id}`}>
+            <li>{article.title}</li>
+          </Link>
         )}
       </List>
     )
