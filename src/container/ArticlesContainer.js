@@ -1,53 +1,30 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import { Container } from 'semantic-ui-react'
+import { Container, List } from 'semantic-ui-react'
 
-import ArticleForm from './ArticleForm.js'
-import ArticleList from './ArticleList.js'
-import Article from '../presentational/Article.js'
-import About from '../presentational/About.js'
-import Contact from '../presentational/Contact.js'
+import ArticleListItem from '../presentational/ArticleListItem.js'
 
 const URL = "http://localhost:3000/api/v1/articles"
 
 export default class ArticlesContainer extends Component {
-  state = {
-    articles: [],
-    article: {},
-  }
+  state = { articles: [] }
 
   componentDidMount() {
-      fetch("http://localhost:3000/api/v1/articles")
-      .then(res => res.json())
-      .then(json => this.setState({articles: json}))
-  }
-
-  fetchArticle = (articleId) => {
-    return fetch(`${URL}/${articleId}`)
+    fetch(URL)
     .then(res => res.json())
-    .then(json => this.setState({
-      article: json
-    }))
+    .then(articles => this.setState({articles: articles}))
   }
 
   render() {
     return (
-      <div>
-        <Container>
-          <Switch>
-            <Route exact path="/:id" render={({match}) => {
-              let articleId = parseInt(match.params.id)
-              this.fetchArticle(articleId)
-              return (
-                this.state.article.id ? <Article key={this.state.article.id} article={this.state.article} /> : null
-              )
-            }} />
-            <Route exact path='/' render={() => {
-              return <ArticleList articles={this.state.articles}/>
-            }} />
-          </Switch>
-        </Container>
-      </div>
-    );
+      this.state.articles.length ?
+      <List>
+        {this.state.articles.map((article) =>
+        <ArticleListItem
+          key={article.id}
+          article={article}/>
+        )}
+      </List>
+      : null
+    )
   }
 }
