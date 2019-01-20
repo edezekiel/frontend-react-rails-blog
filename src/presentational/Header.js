@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import HeroBanner from '../presentational/HeroBanner.js'
+import Banner from '../presentational/Banner.js'
 import NavBar from '../presentational/NavBar.js'
 
 import './menu.css'
@@ -10,9 +10,9 @@ export default class Header extends Component {
 
   render() {
     return(
-      <Segment className="inverted vertical masthead">
+      <Segment className="vertical masthead">
         <NavBar />
-        <HeroBanner />
+        <Banner />
       </Segment>
     )
   }

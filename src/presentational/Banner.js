@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Header } from 'semantic-ui-react'
 
-export default class HeroBanner extends Component {
+export default class Banner extends Component {
 
   render() {
     return(
