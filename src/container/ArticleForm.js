@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 
-export default class Textarea extends Component {
+export default class ArticleForm extends Component {
   constructor(props) {
     super(props);
       this.state = {

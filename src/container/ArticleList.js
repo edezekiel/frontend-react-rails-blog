@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import ArticleListItem from "./ArticleListItem.js"
+import ArticleListItem from "../presentational/ArticleListItem.js"
 import { List } from 'semantic-ui-react'
 
 export default class ArticleList extends Component {
