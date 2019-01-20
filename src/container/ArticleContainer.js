@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ArticleList from './ArticleList.js'
 import ArticleForm from './ArticleForm.js'
+import NavBar from '../presentational/NavBar.js'
 
 export default class ArticleContainer extends Component {
   state = {
@@ -16,7 +17,8 @@ export default class ArticleContainer extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
+        <NavBar />
         <ArticleForm />
         <br />
         <ArticleList
