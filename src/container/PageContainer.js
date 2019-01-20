@@ -22,7 +22,9 @@ export default class PageContainer extends Component {
   fetchArticle = (articleId) => {
     return fetch(`${URL}/${articleId}`)
     .then(res => res.json())
-    .then(console.log)
+    .then(json => this.setState({
+      article: json
+    }))
   }
 
   render() {
@@ -37,10 +39,9 @@ export default class PageContainer extends Component {
               let articleId = parseInt(match.params.id)
               let article = this.state.articles.find(article => article.id === articleId)
               this.fetchArticle(articleId)
-              return this.state.article.id ?
-                <Article
-                  key={article.id}
-                  article={article} /> : null;
+              return (
+                this.state.article.id ? <Article key={this.state.article.id} article={this.state.article} /> : null
+              )
             }} />
             <Route exact path='/' render={() => {
               return <ArticleList articles={this.state.articles}/>
