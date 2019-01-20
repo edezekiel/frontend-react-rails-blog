@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Container, List } from 'semantic-ui-react'
-
+import { List } from 'semantic-ui-react'
 import ArticleListItem from '../presentational/ArticleListItem.js'
 
 const URL = "http://localhost:3000/api/v1/articles"
