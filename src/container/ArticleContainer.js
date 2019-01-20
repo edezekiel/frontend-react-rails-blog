@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink, Link, Switch } from 'react-router-dom';
-import { Container } from 'semantic-ui-react'
+import { Container, Segment } from 'semantic-ui-react'
 
-import Header from '../presentational/Header.js'
+import Banner from '../presentational/Banner.js'
+import NavBar from '../presentational/NavBar.js'
+
 import ArticleForm from './ArticleForm.js'
 import ArticleList from './ArticleList.js'
 
@@ -21,7 +23,15 @@ export default class ArticleContainer extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Segment>
+          <NavBar />
+        </Segment>
+        <Segment padded="very">
+          <Banner />
+        </Segment>
+
+
+
         <Container>
           <Switch>
             <Route exact path='/new' render={() => {
