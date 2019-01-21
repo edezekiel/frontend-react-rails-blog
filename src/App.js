@@ -1,18 +1,18 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'
 
-import AppHeader from './presentational/AppHeader.js'
+import NavBar from './presentational/NavBar.js'
 import AppRouter from './AppRouter.js'
-import { Segment } from 'semantic-ui-react'
+import { Container, Segment } from 'semantic-ui-react'
 
 const App = (props) => {
   return (
     <BrowserRouter>
-      <div>
-        <AppHeader />
+      <Container text>
+        <NavBar />
         <Segment basic></Segment>
-        <AppRouter />
-      </div>
+          <AppRouter />
+      </Container>
     </BrowserRouter>
   );
 }
