@@ -1,7 +1,7 @@
 import React from 'react';
 import Parser from 'html-react-parser';
-import { List, Header, Container } from 'semantic-ui-react'
-import './Article.css'
+import { List, Header } from 'semantic-ui-react'
+import './CodeBlock.css'
 
 const Article = (props) => {
   return (
@@ -9,7 +9,6 @@ const Article = (props) => {
       <Header>{props.article.title}</Header>
       {Parser(`${props.article.text}`)}
     </List.Item>
-
   )
 }
 

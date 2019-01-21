@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { List } from 'semantic-ui-react'
+import { Header, List } from 'semantic-ui-react'
 import ArticleListItem from '../presentational/ArticleListItem.js'
 
 const URL = "http://localhost:3000/api/v1/articles"
@@ -15,8 +15,9 @@ export default class ArticlesContainer extends Component {
 
   render() {
     return (
-      this.state.articles.length ?
-        <List animated size="large" relaxed>
+      <div>
+      <Header size="huge">Articles</Header>
+        <List animated size="medium" relaxed>
           {this.state.articles.map((article) =>
             <List.Item key={article.id}>
               <ArticleListItem
@@ -24,7 +25,7 @@ export default class ArticlesContainer extends Component {
             </List.Item>
           )}
         </List>
-      : null
+      </div>
     )
   }
 }

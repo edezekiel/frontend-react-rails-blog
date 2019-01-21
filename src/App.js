@@ -8,10 +8,9 @@ import { Container, Segment } from 'semantic-ui-react'
 const App = (props) => {
   return (
     <BrowserRouter>
-      <Container text>
-        <NavBar />
-        <Segment basic></Segment>
-          <AppRouter />
+      <Container text textAlign="justified">
+          <NavBar />
+        <AppRouter />
       </Container>
     </BrowserRouter>
   );
