@@ -3,8 +3,8 @@ import PostForm from '../presentational/PostForm.js'
 
 export default class FormContainer extends Component {
   state = {
-    title: 'New blog title',
-    content: 'New blog content'
+    title: '',
+    content: ''
   }
 
   handleChange = (event) => {
