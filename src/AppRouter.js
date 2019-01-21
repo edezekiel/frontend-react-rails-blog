@@ -6,13 +6,19 @@ import ArticleContainer from './container/ArticleContainer.js'
 import About from './presentational/About.js'
 import Contact from './presentational/Contact.js'
 import PostFormContainer from './container/PostFormContainer.js'
+import LoginContainer from './container/LoginContainer.js'
+
 
 const AppRouter = (props) => {
   return(
     <Switch>
       <Route exact path="/about" component={About}/>
       <Route exact path="/contact" component={Contact}/>
+      <Route exact path='/login' render={() => {
+        return <LoginContainer updateUser={props.updateUser} />
+      }}/>
       <Route exact path='/new' component={PostFormContainer}/>
+
       <Route exact path='/:id' component={ArticleContainer} />
       <Route exact path='/' component={ArticlesContainer} />
     </Switch>
