@@ -20,6 +20,7 @@ class LoginContainer extends Component {
       body: JSON.stringify(this.state)
     }).then(res => res.json())
     .then(payload => {
+      console.log(payload)
       localStorage.setItem('token', payload.token)
       localStorage.setItem('name', payload.name)
       this.props.updateUser(payload.name)

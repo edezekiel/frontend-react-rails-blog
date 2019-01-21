@@ -13,11 +13,11 @@ const NavBar = (props) =>  {
         <Link to="/new" className="item"><Header inverted as='h3'>New Article</Header></Link>
 
         { props.user ?
-        <Link to="/" className="item">
-        <Header inverted as='h3'>Logout</Header>
+        <Link to="/" className="item" onClick={props.logout}>
+          <Header inverted as='h3'>Logout</Header>
         </Link> :
         <Link to="/login" className="item">
-        <Header inverted as='h3'>Login</Header>
+          <Header inverted as='h3'>Login</Header>
         </Link>
         }
 
