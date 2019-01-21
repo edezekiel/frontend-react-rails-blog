@@ -8,7 +8,8 @@ const AppHeader = (props) =>  {
     <div>
       <Segment>
         <Menu className="inverted fixed">
-          <Link to="/" className="item"> <img src={logo} alt="logo"/></Link>
+          <Link to="/" className="item"><img src={logo} alt="logo"/></Link>
+          <Link to="/" className="item">Ed Ezekiel</Link>
 
           <div className="right menu">
             <Link to="/about" className="item">About Me</Link>
@@ -16,11 +17,6 @@ const AppHeader = (props) =>  {
             <Link to="/new" className="item">New Article</Link>
           </div>
         </Menu>
-      </Segment>
-      <Segment basic padded="very" textAlign="center">
-        <Header size="huge">
-          Ed Ezekiel's Blog
-        </Header>
       </Segment>
     </div>
   )
