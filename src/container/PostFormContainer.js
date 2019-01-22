@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PostForm from '../presentational/PostForm.js'
+import ArticlePreview from '../presentational/ArticlePreview.js'
 
 export default class FormContainer extends Component {
   state = {
@@ -27,12 +28,18 @@ export default class FormContainer extends Component {
 
   render() {
     return (
-      <PostForm
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}
-        title={this.state.title}
-        content={this.state.content}
-      />
+      <div>
+        <PostForm
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          title={this.state.title}
+          content={this.state.content}
+        />
+        <ArticlePreview
+          title={this.state.title}
+          content={this.state.content}
+          />
+      </div>
     )
   }
 }
