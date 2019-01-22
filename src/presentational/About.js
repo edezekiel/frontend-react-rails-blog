@@ -1,8 +1,10 @@
 import React from 'react'
 
+import { Container } from 'semantic-ui-react'
+
 const About = (props) => {
   return(
-    <div>
+    <Container text textAlign="justified" style={{"margin-top": "7rem"}}>
       <h1>About Me</h1>
       <p>My name is Ed Ezekiel. I am a student at <a href="https://flatironschool.com/">
         Flatiron's</a> immersive software engineering bootcamp in Atlanta.
@@ -36,7 +38,7 @@ const About = (props) => {
       Coding Bootcamp Prep Course</a>. Since then I have been completely
       hooked on programming. I decided to follow my passion and now I am a
       student at Flatiron!</p>
-    </div>
+    </Container>
   )
 }
 

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Header, List, Image } from 'semantic-ui-react'
 import ArticleListItem from '../presentational/ArticleListItem.js'
 
+import { Container } from 'semantic-ui-react'
+
 const URL = "http://localhost:3000/api/v1/articles"
 
 export default class ArticlesContainer extends Component {
@@ -15,7 +17,7 @@ export default class ArticlesContainer extends Component {
 
   render() {
     return (
-      <div>
+      <Container text textAlign="justified" style={{"margin-top": "7rem"}}>
       <Header size="huge">Articles</Header>
         <List animated divided size="medium" relaxed>
           {this.state.articles.map((article) =>
@@ -31,7 +33,7 @@ export default class ArticlesContainer extends Component {
             </List.Item>
           )}
         </List>
-      </div>
+      </Container>
     )
   }
 }

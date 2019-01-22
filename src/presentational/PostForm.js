@@ -1,8 +1,10 @@
 import React from 'react'
-import { Button, Form } from 'semantic-ui-react'
+import { Button, Form, Header, Segment } from 'semantic-ui-react'
 
 const PostForm = (props) => {
   return(
+    <Segment padded="very">
+    <Header size="large">New Article:</Header>
     <Form onSubmit={props.handleSubmit}>
       <Form.Field>
         <label>Title:
@@ -26,6 +28,7 @@ const PostForm = (props) => {
         <Button primary type="submit">Submit</Button>
       </Form.Field>
     </Form>
+    </Segment>
   )
 }
 

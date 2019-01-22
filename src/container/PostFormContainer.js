@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import PostForm from '../presentational/PostForm.js'
 import ArticlePreview from '../presentational/ArticlePreview.js'
 
+import { Grid } from 'semantic-ui-react'
+
 export default class FormContainer extends Component {
   state = {
     title: '',
@@ -28,17 +30,23 @@ export default class FormContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{"margin-top": "7rem", "padding": "10px"}}>
+      <Grid columns={2}>
+        <Grid.Column>
         <PostForm
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
           title={this.state.title}
           content={this.state.content}
         />
+        </Grid.Column>
+        <Grid.Column>
         <ArticlePreview
           title={this.state.title}
           content={this.state.content}
           />
+        </Grid.Column>
+      </Grid>
       </div>
     )
   }

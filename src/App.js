@@ -3,7 +3,6 @@ import { BrowserRouter } from 'react-router-dom'
 
 import NavBar from './presentational/NavBar.js'
 import AppRouter from './AppRouter.js'
-import { Container } from 'semantic-ui-react'
 
 export default class App extends Component {
   state = {
@@ -24,9 +23,7 @@ export default class App extends Component {
       <BrowserRouter>
         <div>
           <NavBar user={this.state.user} logout={this.logout}/>
-          <Container text textAlign="justified" style={{"margin-top": "7rem"}}>
-            <AppRouter updateUser={this.updateUser}/>
-          </Container>
+          <AppRouter updateUser={this.updateUser}/>
         </div>
       </BrowserRouter>
     );
