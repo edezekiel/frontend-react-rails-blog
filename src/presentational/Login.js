@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Form } from 'semantic-ui-react'
 
-const LoginForm = (props) => {
+const Login = (props) => {
   return(
       <Form onSubmit={props.handleSubmit}>
         <Form.Field>
@@ -25,4 +25,4 @@ const LoginForm = (props) => {
   )
 }
 
-export default LoginForm
+export default Login

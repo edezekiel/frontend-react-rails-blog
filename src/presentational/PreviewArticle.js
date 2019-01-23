@@ -3,7 +3,7 @@ import React from 'react'
 import Parser from 'html-react-parser';
 import { Header } from 'semantic-ui-react'
 
-const ArticlePreview = (props) => {
+const PreviewArticle = (props) => {
   return(
     <div>
       <Header size="large">Article Preview:</Header>
@@ -13,4 +13,4 @@ const ArticlePreview = (props) => {
   )
 }
 
-export default ArticlePreview
+export default PreviewArticle

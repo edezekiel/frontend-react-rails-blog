@@ -3,7 +3,7 @@ import Article from '../presentational/Article.js'
 
 const URL = "http://localhost:3000/api/v1/articles"
 
-export default class ArticleContainer extends Component {
+export default class ShowContainer extends Component {
   state = { article: [] }
 
   componentDidMount() {

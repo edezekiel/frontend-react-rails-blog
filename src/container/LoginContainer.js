@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import LoginForm from '../presentational/LoginForm.js'
+
+import Login from '../presentational/Login.js'
 
 const LOGIN_URL = "http://localhost:3000/api/v1/login"
 
@@ -31,7 +32,7 @@ class LoginContainer extends Component {
   render() {
     console.log(this.props)
     return (
-      <LoginForm
+      <Login
         handleSubmit={this.handleSubmit}
       />
     )

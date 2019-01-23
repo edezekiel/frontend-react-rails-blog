@@ -1,7 +1,7 @@
 import React from 'react';
 import Parser from 'html-react-parser';
 import { List, Header } from 'semantic-ui-react'
-import './CodeBlock.css'
+import '../css/CodeBlock.css'
 
 const Article = (props) => {
   return (
