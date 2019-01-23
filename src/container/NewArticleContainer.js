@@ -1,11 +1,15 @@
 import React, {Component} from 'react'
 
+import { Redirect } from 'react-router-dom'
+
 import NewArticle from '../presentational/NewArticle.js'
 
 export default class NewArticleContainer extends Component {
   state = {
     title: '',
-    content: ''
+    content: '',
+    redirect: false,
+    articleId: null
   }
 
   handleChange = (event) => {
@@ -13,7 +17,6 @@ export default class NewArticleContainer extends Component {
   }
 
   handleSubmit = (event) => {
-    event.preventDefault()
     const article = {title: this.state.title, text: this.state.content}
     const options = {
       method: "POST",
@@ -24,15 +27,23 @@ export default class NewArticleContainer extends Component {
     }
     return fetch("http://localhost:3000/api/v1/articles", options)
     .then(res => res.json())
+    .then(article => this.setState({redirect: true, articleId: article.id}))
   }
 
   render() {
+
     return (
-      <NewArticle
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}
-        title={this.state.title}
-        content={this.state.content}/>
+
+      <div>
+
+        <NewArticle
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          title={this.state.title}
+          content={this.state.content}/>
+      {(this.state.redirect) ? <Redirect to={"/" + this.state.articleId}/> : null }
+    </div>
+
     )
   }
 }
