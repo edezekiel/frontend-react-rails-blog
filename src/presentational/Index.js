@@ -7,7 +7,7 @@ import IndexItem from './IndexItem.js'
 const Index = (props) => {
   return (
     <Container text>
-      <List animated divided size="medium" relaxed articles={props.articles}>
+      <List animated divided size="medium" relaxed>
         {props.articles.map((article) => {
           return (
             <List.Item key={article.id}>

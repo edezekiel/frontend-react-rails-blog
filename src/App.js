@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
 
-import { Segment } from 'semantic-ui-react'
+import { Segment, Item } from 'semantic-ui-react'
 
 import NavBar from './presentational/NavBar.js'
 import AppRouter from './AppRouter.js'
