@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
 
-import { Container, Segment } from 'semantic-ui-react'
+import { Segment } from 'semantic-ui-react'
 
 import NavBar from './presentational/NavBar.js'
 import AppRouter from './AppRouter.js'
-import Footer from './presentational/Footer.js'
+import MyFooter from './presentational/MyFooter.js'
 
 export default class App extends Component {
   state = {
@@ -25,17 +25,11 @@ export default class App extends Component {
     return (
       <BrowserRouter>
           <div>
-            <Segment vertical inverted basic>
-              <NavBar user={this.state.user} logout={this.logout}/>
-            </Segment>
-
+            <NavBar user={this.state.user} logout={this.logout}/>
             <Segment vertical padded="very">
               <AppRouter updateUser={this.updateUser}/>
             </Segment>
-
-            <Segment inverted vertical padded="very">
-              <Footer />
-            </Segment>
+            <MyFooter />
           </div>
       </BrowserRouter>
     );
