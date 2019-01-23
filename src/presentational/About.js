@@ -34,9 +34,9 @@ const About = (props) => {
       Over the next two years I took more online lessons, learned bits
       about computer science, and started looking into bootcamps.</p>
 
-      <p>Earlier this year I ran into Flatiron's free online <a href="https://flatironschool.com/free-courses/coding-bootcamp-prep/">
-      Coding Bootcamp Prep Course</a>. Since then I have been completely
-      hooked on programming. I decided to follow my passion and now I am a
+      <p>In 2018, I ran into Flatiron's free online <a href="https://flatironschool.com/free-courses/coding-bootcamp-prep/">
+      Coding Bootcamp Prep Course</a>. I have been completely hooked on
+      web development ever since. I decided to follow my passion and now I am a
       student at Flatiron!</p>
     </Container>
   )
