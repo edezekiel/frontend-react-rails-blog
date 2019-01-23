@@ -4,11 +4,9 @@ import { Segment, Container } from 'semantic-ui-react'
 
 const Footer = () => {
   return (
-    <Segment basic padded="very">
-      <Container textAlign="center">
+    <Container textAlign="center">
       Made by Ed Ezekiel
-      </Container>
-    </Segment>
+    </Container>
   )
 }
 
