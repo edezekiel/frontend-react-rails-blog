@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Article from '../presentational/Article.js'
 
-import { Container } from 'semantic-ui-react'
-
 const URL = "http://localhost:3000/api/v1/articles"
 
 export default class ArticleContainer extends Component {
@@ -19,12 +17,10 @@ export default class ArticleContainer extends Component {
 
   render() {
     return (
-      <Container text textAlign="justified" style={{"margin-top": "7rem"}}>
         <Article
           key={this.state.article.id}
           article={this.state.article}
         />
-      </Container>
     )
   }
 }

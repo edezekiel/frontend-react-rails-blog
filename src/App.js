@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
 
+import { Container } from 'semantic-ui-react'
+
 import NavBar from './presentational/NavBar.js'
 import AppRouter from './AppRouter.js'
 
@@ -21,10 +23,10 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <Container>
           <NavBar user={this.state.user} logout={this.logout}/>
           <AppRouter updateUser={this.updateUser}/>
-        </div>
+        </Container>
       </BrowserRouter>
     );
   }

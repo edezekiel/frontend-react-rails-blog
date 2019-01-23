@@ -30,7 +30,7 @@ export default class FormContainer extends Component {
 
   render() {
     return (
-      <div style={{"margin-top": "7rem", "padding": "10px"}}>
+      <div>
       <Grid columns={2}>
         <Grid.Column>
         <PostForm

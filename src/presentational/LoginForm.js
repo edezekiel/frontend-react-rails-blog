@@ -1,9 +1,8 @@
 import React from 'react'
-import { Button, Form, Container } from 'semantic-ui-react'
+import { Button, Form } from 'semantic-ui-react'
 
 const LoginForm = (props) => {
   return(
-    <Container text textAlign="justified" style={{"margin-top": "7rem"}}>
       <Form onSubmit={props.handleSubmit}>
         <Form.Field>
           <label>Username
@@ -23,7 +22,6 @@ const LoginForm = (props) => {
           <Button primary type="submit">Submit</Button>
         </Form.Field>
       </Form>
-    </Container>
   )
 }
 

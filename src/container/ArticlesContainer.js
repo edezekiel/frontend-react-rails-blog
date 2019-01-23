@@ -17,8 +17,6 @@ export default class ArticlesContainer extends Component {
 
   render() {
     return (
-      <Container text textAlign="justified" style={{"margin-top": "7rem"}}>
-      <Header size="huge">Articles</Header>
         <List animated divided size="medium" relaxed>
           {this.state.articles.map((article) =>
             <List.Item key={article.id}>
@@ -33,7 +31,6 @@ export default class ArticlesContainer extends Component {
             </List.Item>
           )}
         </List>
-      </Container>
     )
   }
 }
