@@ -7,7 +7,7 @@ const NavBar = (props) =>  {
   return (
     <Segment inverted vertical>
       <Container>
-        <Menu inverted stackable >
+        <Menu inverted stackable>
             <Link to="/" className="item"><Header inverted as='h3'><Image src={logo} alt="logo"/> Ed Ezekiel</Header></Link>
             <Link to="/about" className="item"><Header inverted as='h3'>About Me</Header></Link>
             <Link to="/new" className="item"><Header inverted as='h3'>New Article</Header></Link>
