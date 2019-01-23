@@ -1,24 +1,22 @@
 import React from 'react'
 
-import { Button, Form, Container } from 'semantic-ui-react'
+import { Button, Form, Container, Header } from 'semantic-ui-react'
 
 const Login = (props) => {
   return(
     <Container text>
       <Form onSubmit={props.handleSubmit}>
         <Form.Field>
-          <label>Username
+          <Header>Username</Header>
             <input
               type="text"
               name="username"/>
-          </label>
         </Form.Field>
         <Form.Field>
-          <label>Password
+          <Header>Password</Header>
             <input
               type="text"
               name="password"/>
-          </label>
         </Form.Field>
         <Form.Field>
           <Button primary type="submit">Submit</Button>

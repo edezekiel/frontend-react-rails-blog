@@ -9,7 +9,6 @@ const NavBar = (props) =>  {
       <Menu inverted stackable >
           <Link to="/" className="item"><Header inverted as='h3'><Image src={logo} alt="logo"/> Ed Ezekiel</Header></Link>
           <Link to="/about" className="item"><Header inverted as='h3'>About Me</Header></Link>
-          <Link to="/contact" className="item"><Header inverted as='h3'>Contact</Header></Link>
           <Link to="/new" className="item"><Header inverted as='h3'>New Article</Header></Link>
 
           { props.user ?

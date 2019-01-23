@@ -5,22 +5,20 @@ const FormPostArticle = (props) => {
   return(
     <Form onSubmit={props.handleSubmit}>
       <Form.Field>
-        <label>Title:
+        <Header>Title</Header>
           <input
             type="text"
             name="title"
             value={props.title}
             onChange={props.handleChange}/>
-        </label>
       </Form.Field>
       <Form.Field>
-        <label>Content:
+        <Header>Content:</Header>
           <textarea
             name="content"
             value={props.content}
             onChange={props.handleChange}>
           </textarea>
-        </label>
       </Form.Field>
       <Form.Field>
         <Button primary type="submit">Submit</Button>
