@@ -26,7 +26,7 @@ export default class App extends Component {
       <BrowserRouter>
           <div>
             <NavBar user={this.state.user} logout={this.logout}/>
-            <Segment vertical padded="very">
+            <Segment vertical padded>
               <AppRouter updateUser={this.updateUser}/>
             </Segment>
             <MyFooter />
