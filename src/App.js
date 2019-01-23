@@ -5,6 +5,7 @@ import { Container } from 'semantic-ui-react'
 
 import NavBar from './presentational/NavBar.js'
 import AppRouter from './AppRouter.js'
+import Footer from './presentational/Footer.js'
 
 export default class App extends Component {
   state = {
@@ -26,6 +27,7 @@ export default class App extends Component {
         <Container>
           <NavBar user={this.state.user} logout={this.logout}/>
           <AppRouter updateUser={this.updateUser}/>
+          <Footer />
         </Container>
       </BrowserRouter>
     );
