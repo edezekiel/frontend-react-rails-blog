@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Form, Header } from 'semantic-ui-react'
 
-const CreateArticle = (props) => {
+const FormPostArticle = (props) => {
   return(
     <Form onSubmit={props.handleSubmit}>
       <Form.Field>
@@ -29,4 +29,4 @@ const CreateArticle = (props) => {
   )
 }
 
-export default CreateArticle
+export default FormPostArticle

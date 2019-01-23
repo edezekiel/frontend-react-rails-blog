@@ -5,7 +5,7 @@ import IndexContainer from './container/IndexContainer.js'
 import ShowContainer from './container/ShowContainer.js'
 import About from './presentational/About.js'
 import Contact from './presentational/Contact.js'
-import CreateArticleContainer from './container/CreateArticleContainer.js'
+import NewArticleContainer from './container/NewArticleContainer.js'
 import LoginContainer from './container/LoginContainer.js'
 
 
@@ -17,7 +17,7 @@ const AppRouter = (props) => {
       <Route exact path='/login' render={() => {
         return <LoginContainer updateUser={props.updateUser} />
       }}/>
-      <Route exact path='/new' component={CreateArticleContainer}/>
+      <Route exact path='/new' component={NewArticleContainer}/>
 
       <Route exact path='/:id' component={ShowContainer} />
       <Route exact path='/' component={IndexContainer} />
