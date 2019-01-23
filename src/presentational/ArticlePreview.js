@@ -6,9 +6,9 @@ import { Header, Segment } from 'semantic-ui-react'
 const ArticlePreview = (props) => {
   return(
     <Segment padded="very">
-    <Header size="large">Article Preview:</Header>
-    <Header>{props.title}</Header>
-    {Parser(`${props.content}`)}
+      <Header size="large">Article Preview:</Header>
+      <Header>{props.title}</Header>
+      {Parser(`${props.content}`)}
     </Segment>
   )
 }
