@@ -14,12 +14,14 @@ const NewArticle = (props) => {
           handleChange={props.handleChange}
           handleSubmit={props.handleSubmit}
           title={props.title}
+          date={props.date}
           content={props.content}
         />
         </Grid.Column>
         <Grid.Column>
         <PreviewArticle
           title={props.title}
+          date={props.date}
           content={props.content}
           />
         </Grid.Column>

@@ -8,6 +8,7 @@ const PreviewArticle = (props) => {
     <div>
       <Header size="large">Article Preview:</Header>
       <Header>{props.title}</Header>
+      <Header>{props.date}</Header>
       {Parser(`${props.content}`)}
     </div>
   )

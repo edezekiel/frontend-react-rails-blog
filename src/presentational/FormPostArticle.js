@@ -13,6 +13,14 @@ const FormPostArticle = (props) => {
             onChange={props.handleChange}/>
       </Form.Field>
       <Form.Field>
+        <Header>Date</Header>
+          <input
+            type="text"
+            name="date"
+            value={props.date}
+            onChange={props.handleChange}/>
+      </Form.Field>
+      <Form.Field>
         <Header>Content:</Header>
           <textarea
             name="content"

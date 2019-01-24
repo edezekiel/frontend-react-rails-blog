@@ -10,6 +10,7 @@ export default class NewArticleContainer extends Component {
   state = {
     title: '',
     content: '',
+    date: '',
     redirect: false,
     articleId: null
   }
@@ -19,7 +20,7 @@ export default class NewArticleContainer extends Component {
   }
 
   handleSubmit = (event) => {
-    const article = {title: this.state.title, text: this.state.content}
+    const article = {title: this.state.title, text: this.state.content, date: this.state.date}
     const options = {
       method: "POST",
       headers: {
@@ -35,7 +36,7 @@ export default class NewArticleContainer extends Component {
   render() {
     return (
       <div>
-      {this.props.user ? <NewArticle handleChange={this.handleChange} handleSubmit={this.handleSubmit} title={this.state.title} content={this.state.content}/> : <Container><Header>Unauthorized</Header></Container>}
+      {this.props.user ? <NewArticle handleChange={this.handleChange} handleSubmit={this.handleSubmit} title={this.state.title} content={this.state.content} date={this.state.date}/> : <Container><Header>Unauthorized</Header></Container>}
       {(this.state.redirect) ? <Redirect to={"/" + this.state.articleId}/> : null }
     </div>
     )

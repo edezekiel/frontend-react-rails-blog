@@ -6,7 +6,10 @@ import '../css/CodeBlock.css'
 const Article = (props) => {
   return (
     <Container text>
-      <Header>{props.article.title}</Header>
+      <Header textAlign="center">{props.article.title}</Header>
+      <br />
+      <p>{props.article.date}</p>
+      <br />
       {Parser(`${props.article.text}`)}
     </Container>
   )
