@@ -10,12 +10,16 @@ const NavBar = (props) =>  {
         <Menu inverted stackable>
             <Link to="/" className="item"><Header inverted as='h3'><Image src={logo} alt="logo"/> Ed Ezekiel Blog</Header></Link>
             <Link to="/about" className="item"><Header inverted as='h3'>About Me</Header></Link>
-            <Link to="/new" className="item"><Header inverted as='h3'>New Article</Header></Link>
 
             { props.user ?
-            <Link to="/" className="item" onClick={props.logout}>
-              <Header inverted as='h3'>Logout</Header>
-            </Link> :
+            <div>
+              <Link to="/" className="item" onClick={props.logout}>
+                <Header inverted as='h3'>Logout</Header>
+              </Link>
+              <Link to="/new" className="item"><Header inverted as='h3'>New Article</Header>
+              </Link>
+            </div>
+            :
             <Link to="/login" className="item">
               <Header inverted as='h3'>Login</Header>
             </Link>

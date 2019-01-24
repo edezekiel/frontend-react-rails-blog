@@ -15,8 +15,9 @@ const AppRouter = (props) => {
         <Route exact path='/login' render={() => {
           return <LoginContainer updateUser={props.updateUser} />
         }}/>
-        <Route exact path='/new' component={NewArticleContainer}/>
-
+        <Route exact path='/new' render={() => {
+          return <NewArticleContainer user={props.user} />
+        }}/>
         <Route exact path='/:id' component={ShowContainer} />
         <Route exact path='/' component={IndexContainer} />
     </Switch>

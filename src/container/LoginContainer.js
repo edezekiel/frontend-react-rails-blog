@@ -21,7 +21,6 @@ class LoginContainer extends Component {
       body: JSON.stringify(this.state)
     }).then(res => res.json())
     .then(payload => {
-      console.log(payload)
       localStorage.setItem('token', payload.token)
       localStorage.setItem('name', payload.name)
       this.props.updateUser(payload.name)
@@ -31,11 +30,9 @@ class LoginContainer extends Component {
 
   onInputChange = (e) => {
     this.setState({[e.target.name]: e.target.value})
-    console.log(this.state)
   }
 
   render() {
-    console.log(this.props)
     return (
       <Login
         handleSubmit={this.handleSubmit}
