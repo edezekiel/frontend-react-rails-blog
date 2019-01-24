@@ -15,7 +15,7 @@ const Login = (props) => {
         <Form.Field>
           <Header>Password</Header>
             <input
-              type="text"
+              type="password"
               name="password"/>
         </Form.Field>
         <Form.Field>
