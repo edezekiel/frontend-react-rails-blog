@@ -5,6 +5,7 @@ import { List, Image, Header, Container } from 'semantic-ui-react'
 import IndexItem from './IndexItem.js'
 
 const Index = (props) => {
+
   return (
     <Container text>
       <List animated divided size="medium" relaxed>
@@ -16,7 +17,7 @@ const Index = (props) => {
                 <IndexItem article={article} />
               </List.Content>
               <List.Content verticalAlign='middle' floated='right'>
-                <Header as='h5'>January 19, 2019</Header>
+                <Header as='h5'>{article.date}</Header>
               </List.Content>
             </List.Item>
           )

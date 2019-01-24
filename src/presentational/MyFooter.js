@@ -6,17 +6,7 @@ const MyFooter = () => {
   return (
     <Segment vertical padded="very">
       <Container textAlign="center">
-        <List horizontal relaxed divided>
-          <List.Item>
-            <Icon link name="twitter" size="big" color="violet"/>
-          </List.Item>
-          <List.Item>
-            <Icon link name="github" size="big" color="violet"/>
-          </List.Item>
-          <List.Item>
-            <Icon link name="linkedin" size="big" color="violet"/>
-          </List.Item>
-        </List>
+          Made by Ed Ezekiel with <Icon link name="heart"/>
       </Container>
     </Segment>
   )

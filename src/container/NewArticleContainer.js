@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 
 import { Redirect } from 'react-router-dom'
 
+import { Container, Header } from 'semantic-ui-react'
+
 import NewArticle from '../presentational/NewArticle.js'
 
 export default class NewArticleContainer extends Component {
@@ -33,7 +35,7 @@ export default class NewArticleContainer extends Component {
   render() {
     return (
       <div>
-      {this.props.user ? <NewArticle handleChange={this.handleChange} handleSubmit={this.handleSubmit} title={this.state.title} content={this.state.content}/> : <div>Unauthorized</div>}
+      {this.props.user ? <NewArticle handleChange={this.handleChange} handleSubmit={this.handleSubmit} title={this.state.title} content={this.state.content}/> : <Container><Header>Unauthorized</Header></Container>}
       {(this.state.redirect) ? <Redirect to={"/" + this.state.articleId}/> : null }
     </div>
     )
