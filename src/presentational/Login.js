@@ -7,16 +7,21 @@ const Login = (props) => {
     <Container text>
       <Form onSubmit={props.handleSubmit}>
         <Form.Field>
-          <Header>Username</Header>
+          <Header>Email</Header>
             <input
               type="text"
-              name="username"/>
+              name="email"
+              placeholder-="Email"
+              onChange={(e) => props.onInputChange(e)}
+              />
         </Form.Field>
         <Form.Field>
           <Header>Password</Header>
             <input
               type="password"
-              name="password"/>
+              name="password"
+              onChange={(e) => props.onInputChange(e)}
+              />
         </Form.Field>
         <Form.Field>
           <Button primary type="submit">Submit</Button>

@@ -29,11 +29,17 @@ class LoginContainer extends Component {
     })
   }
 
+  onInputChange = (e) => {
+    this.setState({[e.target.name]: e.target.value})
+    console.log(this.state)
+  }
+
   render() {
     console.log(this.props)
     return (
       <Login
         handleSubmit={this.handleSubmit}
+        onInputChange={this.onInputChange}
       />
     )
   }
