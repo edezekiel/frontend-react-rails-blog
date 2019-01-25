@@ -36,8 +36,20 @@ export default class NewArticleContainer extends Component {
   render() {
     return (
       <div>
-      {this.props.user ? <NewArticle handleChange={this.handleChange} handleSubmit={this.handleSubmit} title={this.state.title} content={this.state.content} date={this.state.date}/> : <Container><Header>Unauthorized</Header></Container>}
-      {(this.state.redirect) ? <Redirect to={"/" + this.state.articleId}/> : null }
+      {this.props.user ?
+        <NewArticle
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          title={this.state.title}
+          content={this.state.content}
+          date={this.state.date}
+          />
+          :
+          <Container>
+            <Header>Unauthorized</Header>
+          </Container>
+        }
+      {this.state.redirect ? <Redirect to={"/" + this.state.articleId}/> : null }
     </div>
     )
   }
