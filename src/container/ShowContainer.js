@@ -10,7 +10,6 @@ const URL = "http://localhost:3000/api/v1/articles"
 export default class ShowContainer extends Component {
   state = {
     article: [],
-    user: this.props.user
   }
 
   componentDidMount() {
@@ -27,6 +26,7 @@ export default class ShowContainer extends Component {
         <Article
           key={this.state.article.id}
           article={this.state.article}
+          user={this.props.user}
         />
     )
   }
