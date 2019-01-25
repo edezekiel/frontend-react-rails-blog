@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Index from '../presentational/Index.js'
 
-const URL = "https://stark-tundra-50615.herokuapp.com/api/v1/articles"
+const URL = "https://backend-edezekiel-blog.herokuapp.com/api/v1/articles"
 
 export default class IndexContainer extends Component {
   state = { articles: [] }

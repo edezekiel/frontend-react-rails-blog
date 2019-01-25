@@ -29,7 +29,7 @@ export default class NewArticleContainer extends Component {
       },
       body: JSON.stringify(article)
     }
-    return fetch("https://stark-tundra-50615.herokuapp.com/api/v1/articles", options)
+    return fetch("https://backend-edezekiel-blog.herokuapp.com/api/v1//articles", options)
     .then(res => res.json())
     .then(article => this.setState({redirect: true, articleId: article.id}))
   }

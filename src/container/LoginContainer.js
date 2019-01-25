@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom'
 
 import Login from '../presentational/Login.js'
 
-const LOGIN_URL = "https://stark-tundra-50615.herokuapp.com/api/v1/login"
+const LOGIN_URL = "https://backend-edezekiel-blog.herokuapp.com/api/v1/login"
 
 class LoginContainer extends Component {
   state = {
