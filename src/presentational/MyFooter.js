@@ -1,36 +1,39 @@
 import React from 'react'
 
-import { Segment, Container, Header, Grid, Icon, List } from 'semantic-ui-react'
+import { Segment, Container, Header, Icon, List } from 'semantic-ui-react'
 
 const MyFooter = () => {
   return (
     <Segment vertical padded>
       <Container textAlign="center">
-        <Grid columns={2}>
-          <Grid.Column>
-            <Header color="violet">Made by Ed Ezekiel</Header>
-          </Grid.Column>
-          <Grid.Column>
             <List horizontal relaxed>
+
               <List.Item>
-                <Icon name="github" link size="big" color="violet"></Icon>
+                <a href="https://github.com/edezekiel" target="_blank">
+                  <Icon name="github" link size="big" color="violet"></Icon>
+                </a>
               </List.Item>
 
               <List.Item>
-                <Icon name="twitter" link size="big" color="violet"></Icon>
+                <a href="https://twitter.com/@EdwardAEzekiel" target="_blank">
+                  <Icon name="twitter" link size="big" color="violet"></Icon>
+                </a>
               </List.Item>
 
               <List.Item>
-                <Icon name="linkedin" link size="big" color="violet"></Icon>
+                <a href="https://www.linkedin.com/in/edwardezekiel/" target="_blank">
+                  <Icon name="linkedin" link size="big" color="violet"></Icon>
+                </a>
               </List.Item>
 
               <List.Item>
-                <Icon name="medium m" link size="big" color="violet"></Icon>
+                <a href="https://medium.com/@ed.a.ezekiel" target="_blank">
+                  <Icon name="medium m" link size="big" color="violet"></Icon>
+                </a>
               </List.Item>
 
             </List>
-          </Grid.Column>
-        </Grid>
+
       </Container>
     </Segment>
   )
