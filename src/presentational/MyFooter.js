@@ -8,22 +8,22 @@ const MyFooter = () => {
       <Container textAlign="center">
             <List horizontal relaxed>
               <List.Item>
-                <a href="https://github.com/edezekiel">
+                <a href="https://github.com/edezekiel" target="_blank">
                   <Icon name="github" link size="big" color="violet"></Icon>
                 </a>
               </List.Item>
               <List.Item>
-                <a href="https://twitter.com/@EdwardAEzekiel">
+                <a href="https://twitter.com/@EdwardAEzekiel" target="_blank">
                   <Icon name="twitter" link size="big" color="violet"></Icon>
                 </a>
               </List.Item>
               <List.Item>
-                <a href="https://www.linkedin.com/in/edwardezekiel/">
+                <a href="https://www.linkedin.com/in/edwardezekiel/" target="_blank">
                   <Icon name="linkedin" link size="big" color="violet"></Icon>
                 </a>
               </List.Item>
               <List.Item>
-                <a href="https://medium.com/@ed.a.ezekiel">
+                <a href="https://medium.com/@ed.a.ezekiel" target="_blank">
                   <Icon name="medium m" link size="big" color="violet"></Icon>
                 </a>
               </List.Item>
