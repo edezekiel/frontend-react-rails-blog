@@ -12,7 +12,6 @@ const Index = (props) => {
         {props.articles.map((article) => {
           return (
             <List.Item key={article.id}>
-              <Image avatar floated='left' src={article.image} />
               <List.Content verticalAlign='middle' floated='left'>
                 <IndexItem article={article} />
               </List.Content>
