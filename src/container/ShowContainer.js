@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Article from '../presentational/Article.js'
 
-const URL = "http://localhost:3000/api/v1/articles"
+const URL = "https://stark-tundra-50615.herokuapp.com/api/v1/articles"
 
 // define ShowContainer
 // let ShowWithRouter = withRouter(ShowContainer)
