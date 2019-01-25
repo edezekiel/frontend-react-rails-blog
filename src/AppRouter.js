@@ -18,7 +18,9 @@ const AppRouter = (props) => {
         <Route exact path='/new' render={() => {
           return <NewArticleContainer user={props.user} />
         }}/>
-        <Route exact path='/:id' component={ShowContainer} />
+        <Route exact path='/:id' render={(props) => {
+          return <ShowContainer user={props.user} articleId={props.match.params.id} />
+        }}/>
         <Route exact path='/' component={IndexContainer} />
     </Switch>
   )
