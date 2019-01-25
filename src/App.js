@@ -9,15 +9,15 @@ import MyFooter from './presentational/MyFooter.js'
 
 export default class App extends Component {
   state = {
-    user: localStorage.getItem('name')
+    user: false
   }
 
   updateUser = (user) => {
-    this.setState({ user: user})
+    this.setState({ user: true})
   }
 
   logout = () => {
-    this.setState({ user: null })
+    this.setState({ user: false })
     localStorage.clear()
   }
 

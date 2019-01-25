@@ -24,7 +24,7 @@ class LoginContainer extends Component {
       localStorage.setItem('token', payload.token)
       localStorage.setItem('name', payload.name)
       this.props.updateUser(payload.name)
-      this.props.history.push('/')
+      this.props.history.push('/new')
     })
   }
 
@@ -33,6 +33,7 @@ class LoginContainer extends Component {
   }
 
   render() {
+    console.log(this.props.user)
     return (
       <Login
         handleSubmit={this.handleSubmit}

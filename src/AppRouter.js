@@ -13,7 +13,7 @@ const AppRouter = (props) => {
     <Switch>
         <Route exact path="/about" component={About}/>
         <Route exact path='/login' render={() => {
-          return <LoginContainer updateUser={props.updateUser} />
+          return <LoginContainer user={props.user} updateUser={props.updateUser} />
         }}/>
         <Route exact path='/new' render={() => {
           return <NewArticleContainer user={props.user} />
