@@ -1,14 +1,17 @@
 import React from 'react';
 import Parser from 'html-react-parser';
-import { Header, Container } from 'semantic-ui-react'
+import { Header, Container, Segment, Image } from 'semantic-ui-react'
 import '../css/CodeBlock.css'
 
 const Article = (props) => {
   return (
     <Container text>
-      <Header textAlign="center">{props.article.title}</Header>
+      <Header size="huge">{props.article.title}</Header>
+        {props.article.date}
       <br />
-      <p>{props.article.date}</p>
+      <br />
+      <Image src={props.article.image} />
+
       <br />
       {Parser(`${props.article.text}`)}
     </Container>

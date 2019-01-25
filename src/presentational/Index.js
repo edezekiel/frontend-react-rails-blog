@@ -12,7 +12,7 @@ const Index = (props) => {
         {props.articles.map((article) => {
           return (
             <List.Item key={article.id}>
-              <Image avatar floated='left' src='https://vignette.wikia.nocookie.net/gameofthrones/images/5/5c/Eddard_1x01.jpg/revision/latest?cb=20120511213934' />
+              <Image avatar floated='left' src={article.image} />
               <List.Content verticalAlign='middle' floated='left'>
                 <IndexItem article={article} />
               </List.Content>
