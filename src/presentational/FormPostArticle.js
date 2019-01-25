@@ -21,6 +21,14 @@ const FormPostArticle = (props) => {
             onChange={props.handleChange}/>
       </Form.Field>
       <Form.Field>
+        <Header>Image</Header>
+          <input
+            type="text"
+            name="image"
+            value={props.image}
+            onChange={props.handleChange}/>
+      </Form.Field>
+      <Form.Field>
         <Header>Content:</Header>
           <textarea
             name="content"

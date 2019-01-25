@@ -11,6 +11,7 @@ export default class NewArticleContainer extends Component {
     title: '',
     content: '',
     date: '',
+    image: '',
     redirect: false,
     articleId: null
   }
@@ -20,7 +21,7 @@ export default class NewArticleContainer extends Component {
   }
 
   handleSubmit = (event) => {
-    const article = {title: this.state.title, text: this.state.content, date: this.state.date}
+    const article = {title: this.state.title, text: this.state.content, date: this.state.date, image: this.state.image}
     const options = {
       method: "POST",
       headers: {
@@ -41,8 +42,9 @@ export default class NewArticleContainer extends Component {
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
           title={this.state.title}
-          content={this.state.content}
           date={this.state.date}
+          image={this.state.image}
+          content={this.state.content}
           />
           :
           <Container>

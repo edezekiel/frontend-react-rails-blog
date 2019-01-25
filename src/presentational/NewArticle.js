@@ -15,6 +15,7 @@ const NewArticle = (props) => {
           handleSubmit={props.handleSubmit}
           title={props.title}
           date={props.date}
+          image={props.image}
           content={props.content}
         />
         </Grid.Column>
@@ -22,6 +23,7 @@ const NewArticle = (props) => {
         <PreviewArticle
           title={props.title}
           date={props.date}
+          image={props.image}
           content={props.content}
           />
         </Grid.Column>
