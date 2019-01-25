@@ -20,9 +20,7 @@ const NavBar = (props) =>  {
               </Link>
             </div>
             :
-            <Link to="/login" className="item">
-              <Header inverted as='h3'>Login</Header>
-            </Link>
+            null
             }
 
         </Menu>
