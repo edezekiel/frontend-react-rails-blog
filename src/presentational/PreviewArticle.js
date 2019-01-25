@@ -9,7 +9,7 @@ const PreviewArticle = (props) => {
       <Header size="large">Article Preview:</Header>
       <Header>{props.title}</Header>
       <Header>{props.date}</Header>
-      <Image src={props.image} style={{"min-width": "100%", "max-height": "350px"}}/>
+      <Image src={props.image} style={{"minWidth": "100%", "maxHeight": "350px"}}/>
       <Segment>
         {Parser(`${props.content}`)}
       </Segment>
