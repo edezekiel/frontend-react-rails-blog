@@ -6,11 +6,11 @@ import '../css/CodeBlock.css'
 const Article = (props) => {
   return (
     <Container text>
-      <Header size="huge">{props.article.title}</Header>
-        {props.article.date}
-      <br />
-      <br />
-      <Image src={props.article.image} />
+      <Header size="huge">{props.article.title}
+        <Header.Subheader>{props.article.date}</Header.Subheader>
+      </Header>
+
+      <Image src={props.article.image} style={{"min-width": "100%", "max-height": "350px"}}/>
 
       <br />
       {Parser(`${props.article.text}`)}
