@@ -18,15 +18,9 @@ const About = (props) => {
       <h1><span role="img" aria-label="heart">❤️</span> Code</h1>
 
       <p>My passion for coding began when I was working at UnitedLex. I
-      managed document review projects involving millions of files, so I
-      had to quickly pick up computer skills like:
-      </p>
-
-      <ul>
-        <li>performing advanced database queries;</li>
-        <li>writing excel programs; and</li>
-        <li>creating virtual workspaces.</li>
-      </ul>
+      managed document review projects involving millions of files. In order to
+      streamline my workflow, I picked up computer skills like performing advanced
+      database queries, writing excel programs, and creating virtual workspaces.</p>
 
       <p>I discovered macros, Visual Basic, and keyboard shortcuts that
       seemed like magic. Excel programming and querying was fun, but I
