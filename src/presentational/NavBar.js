@@ -6,9 +6,9 @@ import logo from '../assets/006-ui-1-copy.png'
 const NavBar = (props) =>  {
   return (
     <Segment inverted vertical>
-      <Container>
-        <Menu inverted stackable>
-            <Link to="/" className="item"><Header inverted as='h3'><Image src={logo} alt="logo"/> Ed Ezekiel Blog</Header></Link>
+        <Menu inverted fixed="top">
+          <Container>
+            <Link to="/" className="item"><Header inverted as='h3'><Image src={logo} alt="logo"/> Ed Ezekiel</Header></Link>
             <Link to="/about" className="item"><Header inverted as='h3'>About Me</Header></Link>
 
             { props.user ?
@@ -22,9 +22,8 @@ const NavBar = (props) =>  {
             :
             null
             }
-
+            </Container>
         </Menu>
-      </Container>
     </Segment>
   )
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
 
-import { Segment, Item } from 'semantic-ui-react'
+import { Segment } from 'semantic-ui-react'
 
 import NavBar from './presentational/NavBar.js'
 import AppRouter from './AppRouter.js'
@@ -26,7 +26,7 @@ export default class App extends Component {
       <BrowserRouter>
           <div>
             <NavBar user={this.state.user} logout={this.logout}/>
-            <Segment vertical padded>
+            <Segment vertical padded style={{"marginTop": "40px"}}>
               <AppRouter updateUser={this.updateUser} user={this.state.user}/>
             </Segment>
             <MyFooter />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Segment, Container, List, Icon } from 'semantic-ui-react'
+import { Segment, Container, Icon } from 'semantic-ui-react'
 
 const MyFooter = () => {
   return (
