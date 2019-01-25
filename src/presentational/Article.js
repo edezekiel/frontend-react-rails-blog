@@ -6,8 +6,8 @@ import '../css/CodeBlock.css'
 const Article = (props) => {
   return (
     <Container text>
-      { props.user ? <Button primary>Edit</Button> : null}
-      { props.user ? <Button primary>Delete</Button> : null}
+      { !props.user ? <Button primary onClick={props.editArticle}>Edit</Button> : null}
+      { !props.user ? <Button primary onClick={props.deleteArticle}>Delete</Button> : null}
 
       <Header size="huge">{props.article.title}
         <Header.Subheader>{props.article.date}</Header.Subheader>
