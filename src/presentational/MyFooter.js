@@ -13,7 +13,7 @@ const MyFooter = () => {
                 </a>
               </List.Item>
               <List.Item>
-                <a href="https://twitter.com/_edzekiel" target="_blank">
+                <a href="https://twitter.com/_edezekiel" target="_blank">
                   <Icon name="twitter" link size="big" color="violet"></Icon>
                 </a>
               </List.Item>
