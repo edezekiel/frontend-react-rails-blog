@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Container } from "semantic-ui-react"
+import { Container, Icon } from "semantic-ui-react"
+import { Link } from 'react-router-dom'
 
 const About = (props) => {
   return(
@@ -15,7 +16,7 @@ const About = (props) => {
       When I'm not programming, I'm probably cheering on the Memphis Grizzlies
       with my wife Farley, or playing with my dogs Buddy and Grace.</p>
 
-      <h1><span role="img" aria-label="heart">❤️</span> Code</h1>
+      <h1><Link to="/login" className="item"><Icon name="heart" link size="big" color="violet"></Icon></Link> Code</h1>
 
       <p>My passion for coding began when I was working at UnitedLex. I
       managed document review projects involving millions of files. In order to
