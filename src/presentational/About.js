@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { Container, Icon } from "semantic-ui-react"
+import { Container, Icon, Header } from "semantic-ui-react"
 import { Link } from 'react-router-dom'
 
 const About = (props) => {
   return(
     <Container text>
-      <h1>About Me</h1>
+      <Header>About Me</Header>
       <p>My name is Ed Ezekiel. I am a student at <a href="https://flatironschool.com/">
         Flatiron's</a> immersive software engineering bootcamp in Atlanta.
         This blog is about programming, web development, and my journey
@@ -16,7 +16,7 @@ const About = (props) => {
       When I'm not programming, I'm probably cheering on the Memphis Grizzlies
       with my wife Farley, or playing with my dogs Buddy and Grace.</p>
 
-      <h1><Link to="/login" className="item"><Icon name="heart" link size="big" color="violet"></Icon></Link> Code</h1>
+      <Header><Link to="/login" className="item"><Icon name="heart" color="violet"></Icon></Link> Code</Header>
 
       <p>My passion for coding began when I was working at UnitedLex. I
       managed document review projects involving millions of files. In order to
