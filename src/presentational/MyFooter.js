@@ -13,7 +13,7 @@ const MyFooter = () => {
                 </a>
               </List.Item>
               <List.Item>
-                <a href="https://twitter.com/_edezekiel" target="_blank">
+                <a href="https://twitter.com/EdwardAEzekiel" target="_blank">
                   <Icon name="twitter" link size="big" color="violet"></Icon>
                 </a>
               </List.Item>
@@ -23,7 +23,7 @@ const MyFooter = () => {
                 </a>
               </List.Item>
               <List.Item>
-                <a href="https://medium.com/@edezekiel" target="_blank">
+                <a href="https://medium.com/@ed.a.ezekiel" target="_blank">
                   <Icon name="medium m" link size="big" color="violet"></Icon>
                 </a>
               </List.Item>
