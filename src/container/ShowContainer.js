@@ -40,8 +40,6 @@ export default class ShowContainer extends Component {
 
   render() {
     return (
-      <div>
-      {this.state.article.length ?
         <Article
           key={this.state.article.id}
           article={this.state.article}
@@ -49,9 +47,6 @@ export default class ShowContainer extends Component {
           deleteArticle={this.deleteArticle}
           editArticle={this.editArticle}
         />
-        : null
-      }
-      </div>
     )
   }
 }
