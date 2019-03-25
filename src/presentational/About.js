@@ -7,7 +7,7 @@ const About = (props) => {
   return(
     <Container text>
       <Header>About Me</Header>
-      <p>My name is Ed Ezekiel. I am a student at <a href="https://flatironschool.com/">
+      <p>My name is Ed Ezekiel. I am a web developer and I recently graduated from <a href="https://flatironschool.com/">
         Flatiron's</a> immersive software engineering bootcamp in Atlanta.
         This blog is about programming, web development, and my journey
         from practicing law to loving code.</p>
@@ -30,9 +30,8 @@ const About = (props) => {
       about computer science, and started looking into bootcamps.</p>
 
       <p>In 2018, I ran into Flatiron's free online <a href="https://flatironschool.com/free-courses/coding-bootcamp-prep/">
-      Coding Bootcamp Prep Course</a>. I have been completely hooked on
-      web development ever since. I decided to follow my passion and now I am a
-      student at Flatiron!</p>
+      Coding Bootcamp Prep Course</a>. I decided to follow my passion and I have
+      been completely hooked on web development ever since. </p>
     </Container>
   )
 }
