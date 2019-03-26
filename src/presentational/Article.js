@@ -9,14 +9,16 @@ const Article = (props) => {
       { props.user ? <Button primary onClick={props.deleteArticle}>Delete</Button> : null}
 
       { (props.article.title !== undefined) ?
-        <Header size="huge">{props.article.title}
-          <Header.Subheader>{props.article.date}</Header.Subheader>
-        </Header>
+        <div>
+          <Header size="huge">{props.article.title}
+            <Header.Subheader>{props.article.date}</Header.Subheader>
+          </Header>
 
-        <Image src={props.article.image} style={{"minWidth": "100%", "maxHeight": "350px"}}/>
+          <Image src={props.article.image} style={{"minWidth": "100%", "maxHeight": "350px"}}/>
 
-        <br />
-        {Parser(`${props.article.text}`)}
+          <br />
+          {Parser(`${props.article.text}`)}
+        </div>
       : null
       }
     </Container>
